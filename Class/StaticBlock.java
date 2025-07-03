@@ -1,0 +1,10 @@
+class StaticBlock{
+
+
+static{
+
+
+
+}
+
+}
