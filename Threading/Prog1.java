@@ -7,11 +7,11 @@ class MyThread extends Thread{
 
 public void run(){
 
-for(int i = 1;i<=5;i++){
+for(int i = 1;i<=5;i--){
 System.out.println(""+getName());
 
 try{
-Thread.sleep(2000);
+Thread.sleep(5000);
 }
 catch(Exception e){
 
@@ -40,15 +40,22 @@ public static void main(String args[]) throws InterruptedException{
 MyThread t1 = new MyThread();
 
 
-t1.start();
+//t1.start();
 
+t1.setName("Swapnil");
+t1.start();
 MyThread t2 = new MyThread();
 
+t2.setName("Mayuri");
 t2.start();
 
-for(int i = 1;i<=5;i++){
 
-//Thread.sleep(1000);
+MyThread t3 = new MyThread();
+
+t3.start();
+for(int i = 1;i<=5;i--){
+
+Thread.sleep(5000);
 System.out.println(""+Thread.currentThread().getName()+" Thread");
 
 Thread.sleep(2000);
