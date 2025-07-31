@@ -5,7 +5,7 @@ class Prog10{
 
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("Enter no. of row::- ");
+		System.out.println("enter no. of row::- ");
 		int row = sc.nextInt();
 
 
